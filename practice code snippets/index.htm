@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Bag Exercise</title>
+  <style>
+    /* add to bag button css */
+
+    .addto {
+      background-color: rgb(135, 248, 169);
+      border:none;
+      margin:2px;
+      padding:  6px 20px;
+      border-radius: 10px ;
+      width:auto;
+    }
+    #wishlist{
+      margin:2px;
+      padding:  4px 45px;
+      border-radius: 10px ;
+      width:auto;
+     
+
+
+    }
+
+
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- <button class="addto" onclick="cartQuantity++ ;document.querySelector('#cartQuantity').innerHTML = `Your Bag has ${cartQuantity} items`;"> Add to Bag </button>   
+
+
+
+  <button id="wishlist" class="us" onclick="cartQuantity--; document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;"> MOVE TO WISHLIST ❤ </button>
+
+
+
+  <button  class="addto" onclick="cartQuantity=cartQuantity+2; document.querySelector('#cart-Quantity').innerHTML=`Your Bag has ${cartQuantity} items`;"> add 1 + 1 sale item </button>
+  <h2 id="cartQuantity">Your Bag has 0 items</h2> -->
+
+  <button class="addto" onclick="cartQuantity++;document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;">Add to Bag</button>
+
+
+ <button id="#wishlist" onclick="cartQuantity--; document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;">MOVE TO WISHLIST</button>
+
+
+ <button class="addto" onclick="cartQuantity=cartQuantity+2;document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;">Add 1+1 sale item</button>
+  
+ <h2 id="cart-summary"></h2> 
+  <!-- displaying & counting of wishlist items  -->
+
+  <script>
+    let cartQuantity= 0;
+    document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;
+    
+  </script>
+
+</body>
+
+</html>
