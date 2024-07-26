@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Draw a House with Canvas</title>
+        <style>
+            canvas {
+                border: 1px solid #000000;
+                display: block;
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+      
+// Get the canvas element and its context
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+// Draw the main body of the house
+ctx.fillStyle = '#8B4513'; // Brown color for the house
+ctx.fillRect(150, 200, 200, 200); // x, y, width, height
+
+// Draw the roof
+ctx.beginPath();
+ctx.moveTo(250, 100); // Top point of the roof
+ctx.lineTo(150, 200); // Left corner of the roof
+ctx.lineTo(350, 200); // Right corner of the roof
+ctx.closePath();
+ctx.fillStyle = '#A50A2A'; // Dark red color for the roof
+ctx.fill();
+
+// Draw the door
+ctx.fillStyle = '#654321'; // Darker brown color for the door
+ctx.fillRect(230, 300, 40, 100); // x, y, width, height
+
+// Draw windows
+ctx.fillStyle = '#ADD8E6'; // Light blue color for the windows
+
+// Left window
+ctx.fillRect(170, 220, 50, 50); // x, y, width, height
+
+// Right window
+ctx.fillRect(280, 220, 50, 50); // x, y, width, height
+
+// Draw window panes
+ctx.strokeStyle = '#000000'; // Black color for the panes
+ctx.lineWidth = 2;
+
+// Left window panes
+ctx.beginPath();
+ctx.moveTo(170, 245);
+ctx.lineTo(220, 245);
+ctx.moveTo(195, 220);
+ctx.lineTo(195, 270);
+ctx.stroke();
+
+// Right window panes
+ctx.beginPath();
+ctx.moveTo(280, 245);
+ctx.lineTo(330, 245);
+ctx.moveTo(305, 220);
+ctx.lineTo(305, 270);
+ctx.stroke();
+
+
+    </script>
+
+
+</body>
+</html>
