@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 1</title>
+</head>
+<body>
+    <script>
+       let str = 'mystr';
+        console.log(str);
+        str = 'mystr' + 4;
+        console.log(str);
+
+        console.log(typeof str);
+
+        const y = 'Why am i coding??'
+        console.log(y);
+       
+        try{
+
+        y = `I don't have any feason to code`;
+        console.log(y); //code shows error, we can't change the value of const
+         }
+         catch{
+            console.error("const cant be redefined");
+         }
+
+        const item ={
+            name:'apple',
+            prize:50,
+            color:'red , green',
+            taste:'sweet',
+
+        }
+//we can not add another key to the object declared as const
+        // const item ={
+        //     name:'apple',
+        //     prize:50,
+        //     color:'red , green',
+        //     taste:'sweet',
+        //     variety:'none',
+
+        // }
+
+        let dictionary={
+            data:`collection of facts and figures`,
+            ML:'machine learning',
+            science:'everything around us',
+            song:'that has a singer',
+            google:'search engine',       
+        }
+        console.log(dictionary);
+        
+
+
+
+ 
+    </script>
+</body>
+</html>
