@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to js object</title>
+</head>
+<body>
+    <script>
+        //Objects in javascript
+        let product={
+            company:'Mango',
+            itemName:'jeans',
+            prize:600,
+            size:'s',
+            displayPrize(){
+                console.log(`the prize for product is ${this.prize}`);
+            }
+
+        };
+        product.displayPrize();
+
+        //JSON Objects
+        let str = JSON.stringify(product);
+        console.log(product);
+        console.log(str);
+
+        let newProduct = JSON.parse(str);
+        console.log(newProduct);
+
+        //Store an object in Local Storage
+        localStorage.setItem(
+            "user", JSON.stringify({
+                name:`Rimzim Soni`,
+                age:19,
+
+            })
+        );
+        //Retrieve an object in Local Storage
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        localStorage.clear();
+
+
+
+
+    </script>
+</body>
+</html>
