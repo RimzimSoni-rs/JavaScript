@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5</title>
+</head>
+<body>
+    <script>
+        // Que1
+        let int=[]; 
+
+        for(let i = 0; i<= 2;i++){
+           int.push(Number(prompt('Enter array numbers'))) ;
+           
+        }
+        console.log(int);
+
+        // Que2
+        let arr =[];
+      
+        while(true){
+            let num = Number(prompt('Enter number other then 0'));
+
+           
+
+            if(num === 0){
+                console.log('You entered 0.');
+                break;
+            }
+
+            else{
+         arr.push(num);
+        
+        }
+        
+    }        console.log(arr);
+
+    // //Que3
+    let arr2 =[7, 67, 90, 45, 20, 40, 100, 66];
+    let arr3=[];
+    for (let y=0; y<arr2.length; y++){
+       
+    if(arr2[y]%10 !== 0){
+        continue;
+
+    }
+    else{
+        
+       arr3.push(arr2[y]);
+    }
+   
+}
+console.log(arr3);
+
+//Que4
+let arr4=[2, 4, 5, 6];
+let arr5=[];
+for(let r=0; r<arr4.length; r++){
+    let sqr = arr4[r]**2;
+   arr5.push(sqr);
+}
+console.log(arr5);
+
+//Que5
+
+
+
+
+
+
+
+
+
+    </script>
+   
+
+
+        
+        
+
+
+    
+    
+</body>
+</html>
